@@ -1,0 +1,35 @@
+{
+    "name": "involta-design/petrovich",
+    "description": "Php library to inflect Russian first, last, and middle names.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Chernousov",
+            "email": "iamsaint@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "petrovich/petrovich-rules": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Involta\\Petrovich\\": "src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "petrovich/petrovich-rules",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://github.com/petrovich/petrovich-rules",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ]
+}
